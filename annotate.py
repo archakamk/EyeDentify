@@ -6,6 +6,8 @@ import json
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
+x = [] # random initialization for github push
+
 def detect_redness(image):
     # Convert image to HSV for better color detection
     hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
@@ -96,9 +98,9 @@ os.makedirs(output_dir, exist_ok=True)
 # List to store all annotations
 annotations_list = []
 
-# Loop through your dataset
+# Loop through dataset
 for filename in os.listdir(input_dir):
-    if filename.lower().endswith(('.jpg', '.jpeg', '.png')):  # Adjust based on your image format
+    if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
         image_path = os.path.join(input_dir, filename)
         annotations = annotate_image(image_path)
         
