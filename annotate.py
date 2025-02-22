@@ -7,6 +7,7 @@ eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 x = [] # random initialization for github push
+y = [] # same here
 
 def detect_redness(image):
     # Convert image to HSV for better color detection
@@ -91,8 +92,8 @@ def annotate_image(image_path):
     return annotations
 
 # Directory paths
-input_dir = '/Users/kalyan/Desktop/VascuLens/EyeData/train'  # Update to your input directory
-output_dir = '/Users/kalyan/Desktop/VascuLens/EyeData'  # Update to your output directory
+input_dir = '/Users/kalyan/Desktop/VascuLens/EyeData/train'
+output_dir = '/Users/kalyan/Desktop/VascuLens/EyeData' 
 os.makedirs(output_dir, exist_ok=True)
 
 # List to store all annotations
