@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import BlinkTracker from "./components/BlinkTracker";
+//import EyePrediction from "./components/EyePrediction"
 import "./App.css"; // Import the CSS file
 import logo from "./eyelogo.png"; // Path to your logo image
 
 function App() {
   const { loginWithRedirect, logout, user, isAuthenticated, isLoading } = useAuth0();
   const [screenTime, setScreenTime] = useState(0); // Store the screen time in state
+  /*const [isCameraActive, setIsCameraActive] = useState(false);
+  const videoRef = useRef(null);
+  const canvasRef = useRef(null);
+  const apiKey = 'DjmU9CiFoLeqn8JyX5lg'; // Your Roboflow API key
+  const modelUrl = 'https://detect.roboflow.com/infer/workflows/vasculens/detect-and-classify-4';*/
 
   useEffect(() => {
     let timer;
