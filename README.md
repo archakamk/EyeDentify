@@ -13,10 +13,10 @@ Eyedentify is a web application that uses computer vision to detect and analyze 
 
 1️⃣ Clone the Repository
 ```sh git clone https://github.com/your-username/eyedentify.git
-```cd eyedentify```
+cd eyedentify
 
 2️⃣ Install Dependencies
-```npm install```
+npm install
 
 3️⃣ Set Up Environment Variables
 
