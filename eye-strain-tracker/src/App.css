@@ -1,0 +1,49 @@
+/* App.css */
+
+body {
+  background-color: #f0f0f0; /* Set background color */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Optional: change font */
+  flex-direction: column; /* Stack content vertically */
+  padding: 0 10px; /* Add some padding to the sides to prevent overflow */
+  box-sizing: border-box; /* Ensure padding doesn't affect overall size */
+}
+
+h1 {
+  font-size: 3rem; /* Keep the title big */
+  color: #333; /* Set text color */
+  text-align: center; /* Center the text */
+  margin: 10px 0; /* Reduce top and bottom margin */
+}
+
+div {
+  text-align: center; /* Center content inside the div */
+  background-color: #ffffff; /* Set background color for the content */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  width: 100%; /* Take up full width */
+  max-width: 500px; /* Set a max width */
+  margin: 0 auto; /* Center div horizontally */
+  box-sizing: border-box; /* Ensure padding doesn't affect overall size */
+}
+
+video {
+  border: 5px solid #333; /* Add a border around the video */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  margin-bottom: 20px; /* Add space below the video */
+  width: 100%; /* Make video scale to fit within the div */
+  height: 100%; /* Ensure video takes full height */
+  object-fit: cover; /* Ensure the video covers the container without distortion */
+}
+
+.logo {
+  width: 200px; /* Set logo width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure it doesn't add extra spacing */
+  margin: 0 auto 10px auto; /* Reduce bottom margin */
+}
