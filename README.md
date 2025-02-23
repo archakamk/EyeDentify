@@ -1,38 +1,43 @@
-# EyeDentify
+Eyedentify
 
-## Overview  
-Eye Condition Detector is a web-based application that uses a trained **Roboflow** model to analyze eye images and detect conditions such as **redness, bagginess, strain, watery eyes, or no strain**. The frontend is built with **React.js**, and the model is integrated using the **Roboflow API**.
+Eyedentify is a web application that uses computer vision to detect and analyze eye strain. It integrates with Roboflow’s object detection model to track eye strain levels and notifies users when excessive strain is detected.
 
-## Features  
-✅ Upload an image for analysis  
-✅ Detect different eye conditions  
-✅ Display predictions with confidence scores  
-✅ Easy-to-use interface  
+🚀 Features
+	•	Live camera feed for real-time eye detection
+	•	Roboflow model integration for eye strain analysis
+	•	Screen time tracking
+	•	Auth0 authentication for user login/logout
+	•	Notifications for excessive eye strain
 
-## Tech Stack  
-- **Frontend:** React.js  
-- **Model Deployment:** Roboflow API  
-- **HTTP Requests:** Axios  
+🛠 Setup & Installation
 
----
+1️⃣ Clone the Repository
+```git clone https://github.com/your-username/eyedentify.git```
+```cd eyedentify```
 
-## Setup and Installation  
-
-### 1️⃣ Clone the Repository  
-```git clone https://github.com/your-username/eye-condition-detector.git```
-```cd eye-condition-detector```
-
-### 2️⃣ Install Dependencies
+2️⃣ Install Dependencies
 ```npm install```
 
-### 3️⃣ Configure Roboflow API
-	• Go to Roboflow and get your API key and model ID.
-	•	Open src/roboflow.js and replace the placeholders:
-```REACT_APP_ROBOFLOW_API_KEY=your-api-key```
-```REACT_APP_MODEL_ID=your-model-id```
-```REACT_APP_VERSION_NUMBER=your-version-number```
+3️⃣ Set Up Environment Variables
 
-## Running the Application
+Create a .env file in the root directory and add:
+```REACT_APP_ROBOFLOW_API_KEY=your_api_key_here```
+```REACT_APP_MODEL_PUBLIC_KEY=your_model_key_here```
+```REACT_APP_MODEL_VERSION=your_model_version_here```
 
-### 🚀 Start the Development Server
+4️⃣ Run the App
 ```npm start```
+
+Then, open http://localhost:3000/ in your browser.
+
+🔧 How It Works
+	1.	Log in using Auth0 authentication.
+	2.	Click Start Model to enable the camera and begin eye detection.
+	3.	The app processes video frames using Roboflow’s API and detects eye strain.
+	4.	If prolonged strain is detected, the app notifies the user.
+
+📦 Tech Stack
+	•	React.js – Frontend framework
+	•	Roboflow API – Computer vision model
+	•	Auth0 – Authentication
+	•	Inference.js – Runs Roboflow models in the browser
