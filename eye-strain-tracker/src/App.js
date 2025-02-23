@@ -40,8 +40,8 @@ function App() {
 
   return (
     <div>
-      <img src={logo} alt="Eyedentify Logo" className="logo" />
-      <h1>Eyedentify</h1>
+      <img src={logo} alt="EyeDentify Logo" className="logo" />
+      <h1>EyeDentify</h1>
       {!isAuthenticated ? (
         <button onClick={() => loginWithRedirect()}>Log in</button>
       ) : (
